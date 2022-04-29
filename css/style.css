@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 
 /* -------- Website Theme ------- */
 
@@ -27,8 +28,10 @@
 
 body{
     overflow-x: hidden;
-    background-color: var(--bg-color);
-    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    font-family: "Water Brush", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
 }
 
 a{
@@ -89,8 +92,10 @@ nav.container{
 }
 
 header .logo-img{
-    height: 90px;
-    line-height: 90px;
+    position: relative;
+    top: 5px;
+    height: 105px;
+    line-height: 105px;
 }
 
 .links{
@@ -132,10 +137,6 @@ header .logo-img{
     transition:  0.3s;
 }
 
-.nav-link:hover{
-    color: var(--heading-color);
-}
-
 .nav-link:hover::after{
     width: 100%;
     opacity: 0.3;
@@ -169,16 +170,22 @@ main {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
 .pro {
-    width: 23%;
+    width: 16%;
     min-height: 250px;
     padding: 12px 10px;
+    border-radius: 5px;
     border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pro:hover {
 }
 
 .pro img {
     width: 100%;
-    border-radius: 20px;
 }
